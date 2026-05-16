@@ -27,7 +27,7 @@ jobs:
           pip install -r dev-requirements.txt
 
       - name: Run Pytest
-        run: 
+        run: |
           export PYTHONPATH=$PWD
           pytest tests/
 
@@ -68,7 +68,7 @@ jobs:
 
       - name: Run pip-audit
         run: |
-          pip-audit --ignore-vuln CVE-2025-5412
+          pip-audit --ignore-vuln CVE-2025-54121
 
   secret_scan:
     runs-on: ubuntu-latest
