@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Pytest
         run: |
-export PYTHONPATH=$PWD
+          export PYTHONPATH=$PWD
           pytest tests/
 
   sast_bandit:
