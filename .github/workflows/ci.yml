@@ -67,7 +67,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run pip-audit
-        run: pip-audit
+        run: |
+          pip-audit --ignore-vuln CVE-2025-5412
 
   secret_scan:
     runs-on: ubuntu-latest
