@@ -64,7 +64,7 @@ jobs:
       - name: Install pip-audit
         run: |
           pip install pip-audit
-          pip install -r requirements.txt
+          pip install  --no-cache-dir -r requirements.txt
 
       - name: Run pip-audit
         run: |
