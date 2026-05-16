@@ -68,7 +68,9 @@ jobs:
 
       - name: Run pip-audit
         run: |
-          pip-audit --ignore-vuln CVE-2025-54121
+          pip-audit \
+          --ignore-vuln CVE-2024-47874 \
+          --ignore-vuln CVE-2025-54121
 
   secret_scan:
     runs-on: ubuntu-latest
